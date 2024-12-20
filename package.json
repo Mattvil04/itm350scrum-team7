@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "build": "echo 'No build step required for this project.'",
+     "check-coverage": "node -e \"const c=require('./coverage/coverage-final.json'); if(c.total.lines.pct < 50) { console.error('❌ Coverage too low!'); process.exit(1); } else { console.log('✅ Coverage is sufficient!'); }\""
+  }
+}
